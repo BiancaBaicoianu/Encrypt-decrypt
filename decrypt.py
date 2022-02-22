@@ -1,4 +1,4 @@
-def decrypt(cheie, fisierout):
+def decrypt(key, fisierout):
     with open(fisierout) as f:
         text = f.read()
         ascii_text = "".join([chr(int(binary, 2)) for binary in text.split()])
