@@ -3,7 +3,7 @@ def binary(num, length=8):
     b = "0" *(length-len(b)) + b
     return b
 
-def crypt(cheie, fisierin):
+def crypt(key, fisierin):
   with open(fisierin) as f:
       text = f.read()
       len_key = len(key)
